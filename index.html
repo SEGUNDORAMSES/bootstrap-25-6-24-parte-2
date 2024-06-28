@@ -15,75 +15,163 @@
 
 <body>
 
+    <div class="">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/list products.html">Listado de Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/new product.html">Crear Producto</a>
+                    </li>
 
-    <div class="container mt-4">
-
-        <header>
-            <div>
-                <nav>
-                    <nav class="navbar navbar-expand-sm navbar-light bg-danger">
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="collapsibleNavId">
-                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                        <a class="dropdown-item" href="#">Action 1</a>
-                                        <a class="dropdown-item" href="#">Action 2</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
                         </div>
-                    </nav>
-                </nav>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="CerrarSesion()">Cerrar Sesion</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+
+
+
+
+
+
+
+        <header class="container mt-4">
+            <div class="jumbotron">
+                <h1 class="display-3">Jumbo heading</h1>
+                <p class="lead">Jumbo helper text</p>
+                <hr class="my-2">
+                <p>More info</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+                </p>
             </div>
         </header>
-        \
-        <div class="jumbotron">
-            <h1 class="display-3">Jumbo heading</h1>
-            <p class="lead">Jumbo helper text</p>
-            <hr class="my-2">
-            <p>More info</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-            </p>
-        </div>
+
+
+
 
         <main class="container mt-4">
-            <div class="card">
-                <img class=""
-                    src="https://www.google.com/imgres?q=country%20side&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F147989111%2Fphoto%2Fsunset-over-the-green-hills-countryside-in-england-dorset.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DFHiu0onTorYP6YOh-BrHWtlnkDNo6qrkCBw9BtOnKoI%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Fsunset-over-the-green-hills-countryside-in-england-dorset-gm147989111-17666936&docid=73viA3PErUDS_M&tbnid=B4DqljD9fYChaM&vet=12ahUKEwiS5fXsofiGAxVCSzABHa70B0kQM3oECE0QAA..i&w=612&h=408&hcb=2&ved=2ahUKEwiS5fXsofiGAxVCSzABHa70B0kQM3oECE0QAA"
-                    alt="">
-                <div class="card-body">
-                    <h4 class="card-tittle"></h4>
-                    <p class="card-text"></p>
+
+            <section class="row ">
+                <div class="card col-lg-4">
+                    <img class="card-img-top img-thumbnail"
+                        src="https://images.unsplash.com/photo-1589312133722-eab40c686ebb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Text</p>
+                    </div>
                 </div>
+                <div class="card col-lg-4"">
+                        <img class=" card-img-top img-thumbnail"
+                    src="https://images.unsplash.com/photo-1589312133722-eab40c686ebb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Text</p>
+                    </div>
+                </div>
+                <div class="card col-lg-4"">
+                        <img class=" card-img-top img-thumbnail"
+                    src="https://images.unsplash.com/photo-1589312133722-eab40c686ebb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Text</p>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <div class="container col-lg-6 offset-10">
+                <form class="form">
 
-
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        <small id="helpId" class="form-text text-muted">Help text</small>
+                    </div>
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        <small id="helpId" class="form-text text-muted">Help text</small>
+                    </div>
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        <small id="helpId" class="form-text text-muted">Help text</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
             </div>
 
+            <br>
+
+            <section class="row">
+                <div class="card col-lg-3">
+                    <img class="card-img-top img-thumbnail"
+                        src="https://images.unsplash.com/photo-1589312133722-eab40c686ebb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Text</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3">
+                    <img class="card-img-top img-thumbnail"
+                        src="https://images.unsplash.com/photo-1589312133722-eab40c686ebb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Text</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3">
+                    <img class="card-img-top img-thumbnail"
+                        src="https://images.unsplash.com/photo-1589312133722-eab40c686ebb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Text</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3">
+                    <img class="card-img-top img-thumbnail"
+                        src="https://images.unsplash.com/photo-1589312133722-eab40c686ebb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Text</p>
+                    </div>
+                </div>
+            </section>
         </main>
 
-
-
     </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
