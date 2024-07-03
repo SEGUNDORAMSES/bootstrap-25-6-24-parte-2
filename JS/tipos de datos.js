@@ -9,7 +9,7 @@ let direccion="Guadalupe"
 
 
 
-console.log("Hola mi nombre es:"+nombre+ " Y mi apellido es:" +apellido+ "mi edad es" +edad+"vivo en"+direccion)
+console.log("Hola mi nombre es:"+nombre+ "Y mi apellido es:" +apellido+ "mi edad es" +edad+"vivo en"+direccion)
 
 let mensaje="Hola mi nombre es :"+nombre+ ",Y mi apellido es :" +apellido+ ",mi edad es: " +edad+",vivo en: "+direccion
 
