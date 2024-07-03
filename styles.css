@@ -11,19 +11,21 @@
 .needs-validation {}
 
 .mb-3 {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 29%;
+    margin-right: 29%;
     margin-top: 30px;
 }
 
-.button {
-    margin-left: 31%;
+.btn {
+}
+.button {margin-left: 31%;
     color: white;
     background-color: #444;
     border-radius: 10px;
     transition: 2.5s;
-
 }
+
+
 
 .mb-3:hover {
     color: red;
