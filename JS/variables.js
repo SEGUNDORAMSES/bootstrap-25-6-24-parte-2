@@ -1,20 +1,34 @@
-console.log("hola mundo")
+// Lenguaje de programacion 
+
+
+// Javascript NO ES LO MISMO QUE JAVA 
 
 
 
-let nombre="Geirel"
-let apellido="Cano"
-let edad="28"
-let direccion="Guadalupe"
+
+// 1. variables Almacena Datos var, let , const
+
+// Zona para declarar variables 
+let Nombre = "Marcelo"
+let Apellido = "Mora"
+let Edad = 34
+let Direccion = "San Jose "
+let Mensaje = "Hola mi nombre es :" + Nombre + " mi apellido es " + Apellido + ", mi edad es " + Edad + ",vivo en " + Direccion
+let mensaje2= " Es usted mayor de edad ? "
+let Ventana 
+
+
+// Fin de Zona para declarar variables 
 
 
 
-console.log("Hola mi nombre es:"+nombre+ " Y mi apellido es:" +apellido+ "mi edad es" +edad+"vivo en"+direccion)
 
-let mensaje="Hola mi nombre es :"+nombre+ ",Y mi apellido es :" +apellido+ ",mi edad es: " +edad+",vivo en: "+direccion
-
-console.log(mensaje)
-
+// Mostrar un mensaje en consola del navegador 
+console.log(Mensaje)
+// Capturar lo que digita el usuario   
+Ventana = prompt(mensaje2)
+// Mostrar un mensaje en una ventana emergente  
+alert(Ventana)
 
 
 
