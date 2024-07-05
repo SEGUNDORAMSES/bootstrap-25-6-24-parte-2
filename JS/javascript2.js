@@ -19,3 +19,14 @@ let auto={color:"blanco",
 }
 
 console.log(auto)
+
+let mensaje2=`el color del auto es ${auto.color},`
+
+let edad=18
+
+if (edad>=18) {
+    alert("mayor de edad")
+    
+} else {"no eres mayor de edad"
+    
+}
