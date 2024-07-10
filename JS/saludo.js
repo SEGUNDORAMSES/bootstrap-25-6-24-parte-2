@@ -20,3 +20,9 @@ let presult=document.getElementById("parrafo")
 
 presult.textContent="mi nombre es geirel"
 presult.style.backgroundColor="green"
+
+let titulo=document.getElementById("titulo")
+
+// titulo.textContent="este es mi gato"
+
+let nuevoparrafo= document.crea
