@@ -7,8 +7,8 @@ function saludar(nombre) {
     console.log("hola: "+nombre)
     
 }
-let nombre=prompt("ingresa tu nombre")
-saludar(nombre);
+let dato=prompt("ingresa tu nombre")
+saludar(dato);
 
 //2-Determinar si una persona es mayor de edad
 
@@ -155,12 +155,12 @@ function verificaredad(ages) {
     if (ages >=6 && ages <=18) {
         console.log("esta en edad escolar")
 
-    if (ages >=65) {
+    }else if (ages >=65) {
         console.log("es un adulto mayor")
     }
 
     
-    } else {
+    else {
         
     }
 }
