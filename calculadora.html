@@ -13,29 +13,44 @@
 </head>
 
 <body>
+
+
     <div class="container mt-5 d-flex justify-content-center">
         <div class="col-md-6">
-            <h2>Datos Personales </h2>
-            <form id="formulario">
+            <h2>Calculadora </h2>
+            <form  id="Formulario">
                 <div class="form-group">
-                    <label for="">Nombre</label>
-                    <input type="text" class="form-control" name="" id="valor1" aria-describedby="helpId" placeholder="">
-                    <small id="helpId" class="form-text text-muted">Help text</small>
+                  <label for="">Ingrese el primer valor</label>
+                  <input type="text"
+                    class="form-control" name="" id="Num1" aria-describedby="helpId" placeholder="">
+                  <small id="helpId" class="form-text text-muted">Help text</small>
                 </div>
-                <div class="form-group">
-                    <label for="">Apellido</label>
-                    <input type="text" class="form-control" name="" id="valor2" aria-describedby="helpId" placeholder="">
-                    <small id="helpId" class="form-text text-muted">Help text</small>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block" onclick="calcular()">guardar</button>
-            </form>
-            <div id="valorrespuesta">
-                aqui va la respuesta
 
+                <div class="form-group">
+                  <label for="">Ingrese el segundo valor</label>
+                  <input type="text"
+                    class="form-control" name="" id="Num2" aria-describedby="helpId" placeholder="">
+                  <small id="helpId" class="form-text text-muted">Help text</small>
+                </div>
+                <div class="form-group">
+                  <label for="">Operacion</label>
+                  <select class="form-control" name="" id="operaciones">
+                    <option value="+">Suma</option>
+                    <option value="-">Resta</option>
+                    <option value="*">Multiplicacion</option>
+                    <option value="/">Division</option>
+
+                  </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block" onclick="Calculadora2(event)">Sumar </button>
+
+
+            </form>
+            <div id="Resultado">
             </div>
         </div>
     </div>
-
 
 
     <!-- Optional JavaScript -->
