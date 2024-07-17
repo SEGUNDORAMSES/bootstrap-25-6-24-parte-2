@@ -13,11 +13,11 @@ function calcularIMC(event) {
         alert("bajo peso")
     }
 
-    else if (18.5 <= IMC < 24.9) {
+    else if (18.5 <= IMC &&  IMC < 24.9) {
         alert("peso normal")
     }
-
-    else if (25 <= IMC < 29.9) {
+ 
+    else if (25 <= IMC && IMC < 29.9) {
         alert("sobrepeso")
     }
 
