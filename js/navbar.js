@@ -9,10 +9,19 @@ Mostrar_NavBar();
 //Let Plantilla = "Hola Mundo"
 //Contenedor.innerHTML = Plantilla
 function Mostrar_NavBar() {
-    let opcion4 = "Pagina de Mercado";
-    let opcion1 = "";
-    let opcion2 = "Pagina de Mercado";
-    let opcion3 = "Pagina de Mercado";
+
+let listado_nombres=[
+{name:"inicio"
+ url:"INDEX.HTML"   
+
+
+};
+
+
+
+
+]
+
 
     let Contenedor = document.getElementById('V_navbar')
 
@@ -26,18 +35,19 @@ function Mostrar_NavBar() {
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="Index.html">Inicio <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="${listado_nombres[0].url}">${listado_nombres[0].name}<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="List-Products.html">Listado de Productos</a>
+                            <a class="nav-link" href="List-Products.html"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="New-Product.html">Crear Producto</a>
+                            <a class="nav-link" href="New-Product.html"></a>
                         </li>
-                       <li class="nav-item">
-                            <a class="nav-link" href="#">${NuevaOpcion}</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pagina de mercadeo.html"></a>
                         </li>
-                        <li class="nav-item dropdown">
+                        
+                  <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
                                 <a class="dropdown-item" href="#">Action 1</a>
