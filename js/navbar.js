@@ -24,11 +24,11 @@ let ListadoMenu  = [
     },
     {
         Nombre: "Listado de Productos",
-        Ruta:"List-Products.html"       
+        Ruta:"list products.html"       
     },
     {
         Nombre: "Crear Producto",
-        Ruta:"New-Product.html"       
+        Ruta:"new product.html"       
     },
     {
         Nombre: "Pagina de Mercadeo",
