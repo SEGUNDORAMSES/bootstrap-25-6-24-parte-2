@@ -69,11 +69,52 @@ function agregarSerie() {
 
 //<h2>Ejercicio 7: Extraer una subcadena de los nombres de las series</h2>
 
-function extraerSubcadenaNombres(){
-series.forEach(series => {
-    
-});
+function extraerSubcadenaNombres() {
+    series.forEach(series => {
+
+    });
 
 
 
 }
+
+
+
+
+let personas = [
+    { id: 1, nombre: "Ana", apellido: "Drama", edad: 2 },
+    { id: 3, nombre: "juan", apellido: "soto", edad: 2 },
+    { id: 4, nombre: "sebastian", apellido: "lopez", edad: 25 },
+    { id: 7, nombre: "maria", apellido: "Cano", edad: 15 },
+
+
+];
+let animales = [
+    { id: 5, nombre: "bruno", apellido: "Drama", edad: 2 },
+    { id: 8, nombre: "firulais", apellido: "Drama", edad: 2 },
+    { id: 10, nombre: "scott", apellido: "Drama", edad: 2 },
+    { id: 25, nombre: "valentino", apellido: "Drama", edad: 2 },
+
+
+];
+let plantas = [
+    { id: 30, nombre: "carnivola", apellido: "Drama", edad: 2 },
+    { id: 40, nombre: "guaria", apellido: "Drama", edad: 2 },
+    { id: 50, nombre: "girasol", apellido: "Drama", edad: 2 },
+    { id: 70, nombre: "tulipan", apellido: "Drama", edad: 2 },
+
+
+];
+mostrarnombres(personas)
+mostrarnombres(animales)
+mostrarnombres(plantas)
+function mostrarnombres(dato) {
+    dato.forEach(element => {
+
+        console.log(`el nombre de los arrays son:  ${element.nombre}, ${element.}` );
+
+    });
+
+
+}
+
