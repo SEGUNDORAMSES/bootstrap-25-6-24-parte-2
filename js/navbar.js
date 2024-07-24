@@ -1,44 +1,47 @@
 //Componente NavBar
-Mostrar_NavBar();
+document.addEventListener('DOMContentLoaded', () => {
+    Mostrar_NavBar();
+
+})
 // Objetos de JS
 //Let Contenedor =ID
 //Let Plantilla = "Hola Mundo objetos de JS"
 //Contenedor.innerHTML = Plantilla
 
 function Mostrar_NavBar() {
-// let Opcion1 = "Inicio";
-// let Opcion2 = "Listado de Productos";
-// let Opcion3 = "Crear Producto";
-// let Opcion4 = "Pagina de Mercadeo";
-// let Menu={
-//     Nombre: "Inicio",
-//     Ruta:"Index.html"
-// }
-//Arreglo [{},{},{}]
+    // let Opcion1 = "Inicio";
+    // let Opcion2 = "Listado de Productos";
+    // let Opcion3 = "Crear Producto";
+    // let Opcion4 = "Pagina de Mercadeo";
+    // let Menu={
+    //     Nombre: "Inicio",
+    //     Ruta:"Index.html"
+    // }
+    //Arreglo [{},{},{}]
 
-//Bucles o Ciclos 
-let ListadoMenu  = [
-    {
-        Nombre: "Inicio",
-        Ruta:"Index.html"       
-    },
-    {
-        Nombre: "Listado de Productos",
-        Ruta:"list products.html"       
-    },
-    {
-        Nombre: "Crear Producto",
-        Ruta:"new product.html"       
-    },
-    {
-        Nombre: "Pagina de Mercadeo",
-        Ruta:""       
-    }
-]
-console.log(ListadoMenu)
-let Contenedor = document.getElementById('V_navbar')
+    //Bucles o Ciclos 
+    let ListadoMenu = [
+        {
+            Nombre: "Inicio",
+            Ruta: "index.html"
+        },
+        {
+            Nombre: "Listado de Productos",
+            Ruta: "list products.html"
+        },
+        {
+            Nombre: "Crear Producto",
+            Ruta: "new product.html"
+        },
+        {
+            Nombre: "Pagina de Mercadeo",
+            Ruta: ""
+        }
+    ]
+    console.log(ListadoMenu)
+    let Contenedor = document.getElementById('V_navbar')
 
-let Plantilla = `
+    let Plantilla = `
 
  <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -78,6 +81,6 @@ let Plantilla = `
 
 `
 
-Contenedor.innerHTML = Plantilla 
+    Contenedor.innerHTML = Plantilla
 
 }
