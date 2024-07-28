@@ -21,19 +21,18 @@ let series = [
 
 function mostrarLongitudNombres(longitud) {
     longitud.forEach(element => {
-        console.log(series.length)
+        alert(series.length)
     });
 }
 mostrarLongitudNombres(series)
 
-//<h2>Ejercicio 3: Mostrar nombres de series en mayúsculas</h2>
-// function mostrarNombresMayusculas() {
-//     series.forEach(series => {
-//         alert(series.Serie.toUpperCase())
-//     });
-// }
-
-// mostrarNombresMayusculas()
+    < h2 > Ejercicio 3: Mostrar nombres de peliculas en mayúsculas</ >
+        function mostrarNombresMayusculas(geirel) {
+            series.forEach(series => {
+                alert(series.Serie.toUpperCase())
+            });
+        }
+mostrarNombresMayusculas(series)
 
 //<h2>Ejercicio 4: Mostrar nombres de series en minúsculas</h2>
 // function mostrarNombresMinusculas() {
