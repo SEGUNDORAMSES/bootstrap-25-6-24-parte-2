@@ -8,112 +8,91 @@ let series = [
     { id: 4, Serie: "La Casa de Papel", Categoria: "Crimen", Temporadas: 5 }
 ];
 
-// mostrarNombresSeries(series)
-// function mostrarNombresSeries(peliculas) {
-//     peliculas.forEach(element => {
-//         alert(element.Serie)
-//     });
+mostrarNombresSeries(series)
+function mostrarNombresSeries(peliculas) {
+    peliculas.forEach(element => {
+        alert(element.Serie)
+    });
+}
 
-// }
 
 
 //<h2>Ejercicio 2: Mostrar la longitud del nombre de cada serie</h2>
-
+mostrarLongitudNombres(series)
 function mostrarLongitudNombres(longitud) {
-    longitud.forEach(element => {
-        alert(series.length)
+    alert(series.length)
+}
+
+
+//     < h2 > Ejercicio 3: Mostrar nombres de peliculas en mayúsculas
+mostrarNombresMayusculas(series)
+function mostrarNombresMayusculas(geirel) {
+    geirel.forEach(element => {
+        alert(element.Serie.toUpperCase())
     });
 }
-mostrarLongitudNombres(series)
 
-    < h2 > Ejercicio 3: Mostrar nombres de peliculas en mayúsculas</ >
-        function mostrarNombresMayusculas(geirel) {
-            series.forEach(series => {
-                alert(series.Serie.toUpperCase())
-            });
-        }
-mostrarNombresMayusculas(series)
+
 
 //<h2>Ejercicio 4: Mostrar nombres de series en minúsculas</h2>
-// function mostrarNombresMinusculas() {
-//     series.forEach(series => {
-//         alert(series.Serie.toLowerCase())
+mostrarNombresMinusculas(series)
+function mostrarNombresMinusculas(minus) {
+    minus.forEach(element => {
+        alert(element.Serie.toLowerCase())
+    });
+}
 
-//     });
-// }
-// mostrarNombresMinusculas()
+
 
 //<h2>Ejercicio 5: Encontrar una serie por nombre</h2>
+encontrarSeriePorNombre(series, "Stranger Things")
+function encontrarSeriePorNombre(series, nombre) {
+    let serieEncontrada = series.find(element => element.Serie === nombre);
+    if (serieEncontrada) {
+        alert(`the found serie is ${serieEncontrada.Serie}`)
+    }
 
-// function encontrarSeriePorNombre() {
-//     let serieEncontrada = series.find(series => series.Serie === "Ana");
-//     if (serieEncontrada == "Ana") {
-//         alert("the movie was found")
-//     } else {
-//         alert("the movie was not found")
-//     }
-// }
+    else {
+        alert(`any serie was found`)
+    }
 
-// encontrarSeriePorNombre()
+}
+
 
 //<h2>Ejercicio 6: Añadir una nueva serie</h2>
-// agregarSerie()
-// function agregarSerie() {
-//     let movie = { pelicula: "sandman" }
+agregarSerie(series, { Serie: "alf" })
+function agregarSerie(datos, nuevo) {
+    datos.push(nuevo)
+    alert(series[4].Serie);
+}
 
-//     series.push(movie);
-
-//     alert(series.length);
-// }
 
 //<h2>Ejercicio 7: Extraer una subcadena de los nombres de las series</h2>
 
-// function extraerSubcadenaNombres() {
-//     series.forEach(series => {
+extraerSubcadenaNombres(series)
+function extraerSubcadenaNombres(ini) {
+    ini.forEach(element => {
+        alert(element.Serie.substring(0, 4))
+    });
+}
 
-//     });
-
-
-
-// }
-
-
-
-
-// let personas = [
-//     { id: 1, nombre: "Ana", apellido: "Drama", edad: 2 },
-//     { id: 3, nombre: "juan", apellido: "soto", edad: 2 },
-//     { id: 4, nombre: "sebastian", apellido: "lopez", edad: 25 },
-//     { id: 7, nombre: "maria", apellido: "Cano", edad: 15 },
-
-
-// ];
-// let animales = [
-//     { id: 5, nombre: "bruno", apellido: "Drama", edad: 2 },
-//     { id: 8, nombre: "firulais", apellido: "Drama", edad: 2 },
-//     { id: 10, nombre: "scott", apellido: "Drama", edad: 2 },
-//     { id: 25, nombre: "valentino", apellido: "Drama", edad: 2 },
+//<h2>Ejercicio 8: Reemplazar una palabra en los nombres de las series</h2>
+reemplazarPalabraNombres(series,"Ana","luis")
+function reemplazarPalabraNombres(datos,buscar,Reemplazar) {
+datos.forEach(element => {
+if (buscar===element.Serie) {
+    alert(element.Serie.replace(buscar,Reemplazar))
+} else {
+    
+}
 
 
-// ];
-// let plantas = [
-//     { id: 30, nombre: "carnivola", apellido: "Drama", edad: 2 },
-//     { id: 40, nombre: "guaria", apellido: "Drama", edad: 2 },
-//     { id: 50, nombre: "girasol", apellido: "Drama", edad: 2 },
-//     { id: 70, nombre: "tulipan", apellido: "Drama", edad: 2 },
+
+});
+
+console.log(series)
 
 
-// ];
-// mostrarnombres(personas)
-// mostrarnombres(animales)
-// mostrarnombres(plantas)
-// function mostrarnombres(dato) {
-//     dato.forEach(element => {
+}
 
-//         console.log(`el nombre de los arrays son:  ${element.nombre}, ${element.}` );
-
-//     });
-
-
-// }
 
