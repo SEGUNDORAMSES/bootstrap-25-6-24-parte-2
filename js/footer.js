@@ -14,12 +14,12 @@ const Opciones_Footer = [
 //Funcion para mostrar el Footer
 function Mostrar_Footer(Opciones_Footer) {
     let Contenedor = document.getElementById('V_Lista_Footer');
-    let Plantilla;
+    let Plantilla= " ";
 
     Opciones_Footer.forEach(element => {
 
         if (element.Activo) { //Valida si la condicion es verdadera para mostrar al usuario
-            Plantilla += `
+            Plantilla + = `
             <li class="list-inline-item">
                <a href="${element.Ruta}" class="text-white">${element.Nombre}</a>
            </li>
