@@ -1,35 +1,35 @@
-practica()
+document.addEventListener('DOMContentLoaded', () => {
+
+    hazlo()
+
+})
 
 
-let names = [
-    { Nombre: "geirel", edad: 24, location: "guadalupe", img: src"/IMG/aquaman.png"},
-    { Nombre: "geirel", edad: 24, location: "guadalupe", img: src"/IMG/batman.png"},
-    { Nombre: "geirel", edad: 24, location: "guadalupe", img: src"/IMG/default.jpg"},
+
+let Names = [
+    { nombre: "geirel", edad: 25, location: "guadalupe" },
+    { nombre: "pablo", edad: 25, location: "guadalupe" },
+    { nombre: "geirel", edad: 25, location: "guadalupe" },
 ];
 
 
+function hazlo() {
 
-function practica() {
-    let Contenedor = document.getElementById("practice")
+let Contenedor=document.getElementById("practica")
 
-    let Plantilla = `
+let Plantilla=
+`
 
+<img class="card-img-top" src="holder.js/100x180/" alt="">
+  <div class="card-body">
+    <h4 class="card-title">${Names[0.nombre]}</h4>
+    <p class="card-text">Text</p>
+  </div>
 
-  <img class="card-img-top" src=${names[0].img} alt="">
-      <div class="card-body">
-        <h4 class="card-title">${names[0].Nombre}</h4>
-        <p class="card-text">${names[0].location}</p>
-      </div>
 
 `
 
-
-Contenedor.innerHTML=Plantilla
-
-
-
-
-
-
+Contenedor.innerHtml=Plantilla
+alert(Names[0].location)
 
 }
