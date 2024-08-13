@@ -1,3 +1,9 @@
-import { execute} from "/JS/HTML.JS";
 
-execute()
+import {execute} from "/js/HTML.JS";
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    execute()
+  
+})
