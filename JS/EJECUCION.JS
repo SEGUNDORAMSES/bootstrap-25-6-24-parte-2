@@ -1,9 +1,9 @@
 
-import {execute} from "/js/HTML.JS";
+import {geirel} from "/js/HTML.JS";
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    execute()
+   geirel() 
   
 })
