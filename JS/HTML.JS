@@ -1,39 +1,25 @@
-export const ejecutar=()=> {
-    const nave=document.getElementById("navi").innerHTML=main()
-    const car= document.getElementById("cartas").innerHTML=crds(nombrar)  
-
-
-}
-
-let nombrar = [
-    { nombre: "geirel", edad: 30, lugar: "costarica", img: "/IMG/1-Banner.jpg" },
-    { nombre: "pablo", edad: 40, lugar: "usa", img: "/IMG/1-Logo.png" }
+let pct=[
+{img:"/IMG/1-Banner.jpg"},
+{img:"/IMG/1-Header.jpg"},
+{img:"/IMG/1-Logo.png"},
+{img:"/IMG/1-Noticia.jpg"},
+{img:"/IMG/aquaman.png"},
+{img:"/IMG/batman.png"},
+{img:"/IMG/HTML Y CSS LOGOS.png"},
 ]
 
+export const geirel=()=> {
+let navo=document.getElementById("navi").innerHTML=nv(); 
+let cen=document.getElementById("tab").innerHTML= ct();
+let inch=document.getElementById("foot").innerHTML= feet();
+}
 
 
-const crds=(cr)=>{
 
-   
-    
- 
-    
-    cr.forEach(element => {
-            `<img class="card-img-top mt-10" src="${element.img}">
-       <div class="card-body">
-         <h4 class="card-title mt-20">${element.nombre}</h4>
-         <p class="card-text">${element.edad}</p>
-       </div>`
-    });
+const nv=()=>{
   
-    
-    }
-
-
-
-
-    const main=()=>{
-let html=`<a class="navbar-brand" href="#">Navbar</a>
+let html=`
+ <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
       aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -58,9 +44,73 @@ let html=`<a class="navbar-brand" href="#">Navbar</a>
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
-  </div>`
+  </div>
+`
+return html
+
+
+}
+
+
+
+
+const ct=()=>{
+
+let html=`
+ <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td scope="row"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+`
 
 return html
+
+
+
+}
+
+
+
+
+
+
+const feet=(data)=>{
+let html=""
+data.forEach(element => {
+  
+
+
+
+html+=`<div class="card col-lg-5">
+  <img class="card-img-top" src="/IMG/1-Banner.jpg">
+  <div class="card-body">
+    <h4 class="card-title">Title</h4>
+    <p class="card-text">Text</p>
+  </div>
+</div>  
+
+`
+return html
+
+});
+
+
+
 
 
     }
