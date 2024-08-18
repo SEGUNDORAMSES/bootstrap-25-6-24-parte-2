@@ -1,24 +1,23 @@
 
 
-
-export const gei = async () => {
-    let url = "https://jsonplaceholder.typicode.com/users"
-    
+export const geirel = async () => {
+let url="https://rickandmortyapi.com/api/character/99"
     try {
+
         const response = await fetch(url);
-        if (response.status == 200) {
-            
-            const data = await response.json();
+if (response.status==100) {
+    
+    const data = await response.json();
 
-            console.log(data);
-           
-        } else {
+    alert(data)
+}        
+else{
+alert(url)
+}
+    
 
-           console.log("is bad")
 
-        }
-
-    } catch (error) {
+} catch (error) {
 
         console.log(error);
 
