@@ -48,7 +48,7 @@ export const work=()=> {
     let html=`
      <thead>
             <tr>
-              <th></th>
+              <th>geirel</th>
               <th></th>
               <th></th>
             </tr>
