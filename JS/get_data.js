@@ -1,6 +1,6 @@
 
 
-export const geirel = async () => {
+export const luz = async () => {
 let url="https://rickandmortyapi.com/api/character/99"
     try {
 
